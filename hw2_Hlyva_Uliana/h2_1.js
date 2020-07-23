@@ -1,25 +1,32 @@
+//перше число
 let number_1 = +prompt('Введіть перше ціле число!');
-
-		if (Number.isInteger(number_1)){
-			console.log('Перше число:', number_1);
-		} else{
-			console.log('Перше число:', 'NaN');
-		}	
-
-let number_2 = +prompt('Введіть друге ціле число!');
-
-		if (Number.isInteger(number_2)){
-			console.log('Друге число:', number_2);
-		} else{
-			console.log('Друге число:', 'NaN');
+		while(!Number.isInteger(number_1)||number_1 == "" || number_2<=number_1){
+		let number_1 = +prompt('Введіть перше ціле число ЩЕ РАЗ!');
 		}
+console.log('Перше число:', number_1);
+document.writeln('<b>Перше число:</b>', number_1 + '<br>');
+
+
+//друге число
+let number_2 = +prompt('Введіть друге ціле число!');
+		while(!Number.isInteger(number_2)||number_2 == "" || number_2<=number_1){
+		let number_2 = +prompt('Введіть друге ціле число ЩЕ РАЗ!');
+		}
+console.log('Друге число:', number_2);
+document.writeln('<b>Друге число:</b>', number_2 + '<br>');
+ 
+
 
 const yesNo = confirm('Чи потрібно пропускати парні числа?');
 	if(yesNo){
 		console.log('так');
+		document.writeln('<b>Чи потрібно пропускати парні числа?</b>', 'так' + '<br>');
 	}else{
 		console.log('ні');
+		document.writeln('<b>Чи потрібно пропускати парні числа?</b>', 'ні' + '<br>');
 	}
+
+
 	
 //знаходження суми чисел всіх чисел, суми парних
 let suma = 0;
@@ -39,14 +46,8 @@ if (yesNo === true) {
 	console.log(suma_1);
 }
 }
-
-
-
-document.writeln('<b>Перше число:</b>', number_1 + '<br>');
-document.writeln('<b>Друге число:</b>', number_2 + '<br>');
-document.writeln('<b>Чи потрібно пропускати парні числа?</b>', yesNo + '<br>');
 if (yesNo === true) {
-document.writeln('<b>Потрібно:</b>', suma_1-parni + '<br>');
+	document.writeln('<b>Результат при пропусканні парних чисел:</b>', suma_1-parni + '<br>');
 }else if (yesNo === false) {
-document.writeln('<b>Непотрібно:</b>', suma_1 + '<br>');
+	document.writeln('<b>Результат при пропусканні непарних чисел:</b>', suma_1 + '<br>');
 }
