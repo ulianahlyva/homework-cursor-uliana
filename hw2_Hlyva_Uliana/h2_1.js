@@ -6,10 +6,6 @@ let number_2 = +prompt('Введіть друге ціле число!');
 console.log('Перше число:', number_1);
 document.writeln('<b>Перше число:</b>', number_1 + '<br>');
 
-
-		while(!Number.isInteger(number_2)||number_2 == "" || number_2<=number_1){
-		let number_2 = +prompt('Введіть друге ціле число ЩЕ РАЗ!');
-		}
 console.log('Друге число:', number_2);
 document.writeln('<b>Друге число:</b>', number_2 + '<br>');
  
