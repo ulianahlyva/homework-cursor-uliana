@@ -1,5 +1,5 @@
-//перше число
 let number_1 = +prompt('Введіть перше ціле число!');
+let number_2 = +prompt('Введіть друге ціле число!');
 		while(!Number.isInteger(number_1)||number_1 == "" || number_2<=number_1){
 		let number_1 = +prompt('Введіть перше ціле число ЩЕ РАЗ!');
 		}
@@ -7,8 +7,6 @@ console.log('Перше число:', number_1);
 document.writeln('<b>Перше число:</b>', number_1 + '<br>');
 
 
-//друге число
-let number_2 = +prompt('Введіть друге ціле число!');
 		while(!Number.isInteger(number_2)||number_2 == "" || number_2<=number_1){
 		let number_2 = +prompt('Введіть друге ціле число ЩЕ РАЗ!');
 		}
