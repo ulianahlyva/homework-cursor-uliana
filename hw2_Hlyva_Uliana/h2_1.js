@@ -1,11 +1,19 @@
 let number_1 = +prompt('Введіть перше ціле число!');
-let number_2 = +prompt('Введіть друге ціле число!');
-		while(!Number.isInteger(number_1)||number_1 == "" || number_2<=number_1){
-		let number_1 = +prompt('Введіть перше ціле число ЩЕ РАЗ!');
-		}
+	if(!Number.isInteger(number_1)||number_1 == ""){
+	do{
+		number_1 = +prompt('Введіть перше ціле число ЩЕ РАЗ!');
+	}while(!Number.isInteger(number_1))
+	}
 console.log('Перше число:', number_1);
 document.writeln('<b>Перше число:</b>', number_1 + '<br>');
 
+
+let number_2 = +prompt('Введіть друге ціле число!');
+if(!Number.isInteger(number_2)||number_2 == "" || number_2<=number_1){
+	do{
+		number_2 = +prompt('Введіть друге ціле число ЩЕ РАЗ!');
+		}
+		while(!Number.isInteger(number_2))}
 console.log('Друге число:', number_2);
 document.writeln('<b>Друге число:</b>', number_2 + '<br>');
  
